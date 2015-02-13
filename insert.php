@@ -1,8 +1,7 @@
 <?php
 /**
 *	插入数据
-*   1
-*   @
+*   
 *
 */
 
@@ -59,14 +58,14 @@ if(isset($_POST['cname']) && isset($_POST['school'])){
         $time_now=time();
         $time_search=$_SESSION['search']['time'];
         if($time_now<$time_search){
-            die("新建班级非法");
+            exit("新建班级非法");
         }
-        #//内容检测,不太合理，暂时关闭
-        #$con_search=$_SESSION['content'];
-        #$con_now=$school.$cname;
-        #if($con_now != $con_search){
-        #   die("新建班级非法");
-        #}
+        //内容检测,不太合理
+        $con_search=$_SESSION['search']['content'];
+        $con_now=$school.$cname;
+        if($con_now != $con_search){
+           exit("新建班级非法（先确认此班级是否存在）");
+        }
 
 
     }else{

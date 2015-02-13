@@ -3,6 +3,7 @@
 *数据库连接
 *
 */
+error_reporting(0);
 include("ca_config.php");
 
 $mysqli=new mysqli($ca_dbhost,$ca_dbuser,$ca_dbpasswd,$ca_dbname,$ca_dbport);

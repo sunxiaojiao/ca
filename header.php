@@ -5,7 +5,7 @@
 *
 */
 
-
+error_reporting(0);
 //获取当前用户,若无，跳到首页
 session_start();
 if(isset($_SESSION['uid'])){
