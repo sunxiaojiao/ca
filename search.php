@@ -5,8 +5,9 @@
  */
 error_reporting(0);
 session_start();
-include("header.php");
+include("ca_dbconn.php");
 if(isset($_GET['search']) /*&& $_GET['search'] !=null*/){
+    include("header.php");
     //检测SQL注入
     if(check_sql_inject()){
         exit("<script>alert('非法字符！');location.href='index.php';</script>");
@@ -77,6 +78,9 @@ if(isset($_GET['class']) && isset($_GET['school'])){
                 die("请输入完整信息");
             }
             //检测SQL注入
+            if(!function_exists("check_sql_inject")){
+                include("function.php");
+            }
             if(check_sql_inject()){
                 exit("<script>alert('非法字符！');location.href='index.php';</script>");
             }
