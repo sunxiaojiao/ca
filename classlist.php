@@ -32,7 +32,7 @@ if($result=$mysqli->query($sql)){
             $cid_list=$row[0].",";
         }
     }else{
-        exit("<tr>no result111111</tr>");
+        exit("<tr><td>无管理的班级</td></tr>");
         
     }
 }else{
