@@ -5,9 +5,9 @@
 <head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-    <meta name="keywords" content="," />
+    <meta name="keywords" content="孙小蛟,同学录" />
     <meta name="description" content="" /> 
-    <title>首页</title>
+    <title>同学录</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href='http://www.youziku.com/webfont/CSS/80c9452318f77e60ba1bd127a7b584c6' rel='stylesheet' type='text/css'/>
     <style>
