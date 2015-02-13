@@ -137,7 +137,6 @@ if(isset($_SESSION['uid'])){
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-        <button type="button" class="btn btn-primary" id="btn_login">登录</button>
       </div>
     </div>
   </div>
@@ -169,7 +168,6 @@ if(isset($_SESSION['uid'])){
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-        <button type="button" class="btn btn-primary" id="btn_reg">申请</button>
       </div>
     </div>
   </div>
